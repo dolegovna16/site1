@@ -1,0 +1,441 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin: 0px 166px;    /* отступ лого зверху 0 по бокам 166 */
+} 
+
+.header {
+    background-image: url(bg.jpg); /* фон фотка */
+    height: 100vh;  /* розтягується по всій висоті екрана */
+    background-repeat: no-repeat; /*не повторять фотку */
+    background-size: cover; /* фотка розтягується рівномірно по екрану */
+}
+
+
+.header-line {
+    padding-top: 50px; /* отступ лого зверху */
+    display: flex; /*меню  в лінію один за одним */
+    align-items: center; /* вирівнюванняя по лінії головного елементу */
+    justify-content: space-around; /* відступ між елементами, щоб не були приклеїні один до одного */
+}
+
+.nav-item {
+    color: #fff; /* білий колір */
+    text-decoration: none; /* прибрали підчеркування */
+    font-weight: 700; /* жирніше текст */
+    font-size: 14px; /* розмір шрифта */
+    margin-right: 25px; /* відступ в менюшкі на 25 пікселів від кожного */
+    transition: color 0.3s linear; /* при наведенні зміна коліра плавніше */
+}
+
+.nav-item:hover {
+    color: #d81d1d;  /* зміна кольору при наведенні на текст меню */
+}
+
+
+.cart {
+    position: relative; /*  розташування відносно звичайної позиції по вертикалі  */
+    border-right: 1px solid #FFFFFF; /* границя для елемента корзинки */
+    padding-right: 10px; /* отступ від елемента*/
+    height: 50px; /* висота границі */
+}
+
+.cart-img {
+    position: absolute; /* независиме розташування */
+    top: 18px; /* отступ звичайний */
+    right: 7px; /* отступ справа для елеметів */
+}
+
+.num {
+    color: #fff; /* білий колір */
+    text-decoration: none; /* прибрали підчеркування */
+    font-weight: 700; /*товщина букв*/
+    transition: color 0.3s linear; /* при наведенні зміна коліра плавніше */
+}
+
+.num:hover {
+    color: #d81d1d; /* зміна кольору при наведенні на текст меню */
+}
+
+.phone-text {
+    font-size: 14px; /* розмір шрифта */
+    font-weight: 400; /*товщина букв*/
+    color: #fff; /* білий колір текст */
+}
+
+.phone-holder {
+    display: flex; /*меню  в лінію один за одним */
+    align-items: center;  /* вирівнюванняя по лінії головного елементу */
+}
+
+.button {
+    background-color: #FF7400; /* цвет кнопки */
+    color: #fff; /* білий колір текст */
+    text-decoration: none; /* прибрали підчеркування */
+    padding: 14px 18px; /* відступи текста внутрішні */
+    font-weight: 700; /*товщина букв*/
+    transition: background-color 0.2s linear; /* при наведенні зміна коліра плавніше */
+}
+
+.button:hover {
+    background-color: #894b17; /* зміна кольору при наведенні на кнопочку */
+}
+.header-down{
+    position: relative; /*  розташування відносно звичайної позиції по вертикалі  */
+}
+.header-title{
+    color: #D67E35; /* колір текст */
+    font-family: 'Tinos', serif; /* семейство шрифтів */
+    font-size: 50px; /* розмір шрифта */
+    font-weight: 400; /*товщина букв*/
+    text-align: center; /*текс по середині*/
+    position: absolute; /* независиме розташування */
+    left: 0; /* відступ зліва */
+    margin-top: 202px; /* відступ зверху текста */
+    margin-bottom: 12px; /* відступ текста від текста */
+}
+.header-suptitle{
+    color: #fff; /* білий колір текст */
+    font-size: 18px; /* розмір шрифта */
+    font-family: 'Open Sans', sans-serif; /* семейство шрифтів */
+}
+.header-suptitle:after{
+    position: absolute; /* независиме розташування */
+    content: ''; /* пусто, для ліній */
+    height: 2px; /* висота лінії */
+    width: 61px;  /* довжина лінії */
+    background-color: #fff; /* фон лінії */
+    top: 127px; /* відступ для лівої полоски */
+    left: 56px; /* відступ для лівої полоски від лівої сторони*/
+}
+.header-suptitle:before{
+    position: absolute; /* независиме розташування */
+    content: '';  /* пусто, для ліній */
+    height: 2px; /* висота лінії */
+    width: 61px; /* довжина лінії */
+    background-color: #fff; /* фон лінії */
+    top: 127px; /* відступ для правої полоски */ 
+    left: 290px; /* відступ для правої полоски від лівої сторони*/
+}
+.header-botton{
+    background-color: #FF7400;  /* цвет кнопки */
+    padding: 14px 28px;  /* відступи текста внутрішні */
+    color: #fff; /* білий колір текст */
+    font-size: 14px; /* розмір шрифта */
+    font-weight: 700; /*товщина букв*/
+    font-family: 'Open Sans', sans-serif;  /* семейство шрифтів */
+    text-decoration: none;  /* прибрали підчеркування */
+    transition: background-color 0.3s linear; /* при наведенні зміна коліра плавніше */
+}
+.header-botton:hover{
+    background-color: #894b17; /* зміна кольору при наведенні на кнопочку */
+}
+.cards-holder{
+    display: flex; /*меню  в лінію один за одним */
+    justify-content: space-between; /* росположення контента вдоль осі flex */
+}
+.card{
+    width: 349px;  /* ширина елеменатів дівів */
+    box-shadow: 10px 10px 40px 20px #0000001A; /* тінь 3 карточок */
+    background-color: #fff; /* колір фону */
+    margin-right: 31px;  /* відступ справа */
+    margin-top: -80px; /* відступ зверху */
+    padding: 10px 10px;  /* внутрішні відступи */
+}
+.card-image{
+    display: flex; /*меню  в лінію один за одним */
+    justify-content: center;  /* росположення контента по середины осі flex */
+    padding-top: 31px; /* внутрішній верній відступ */
+}
+.card-title{
+    display: flex; /*меню  в лінію один за одним */
+    justify-content: center;  /* росположення контента по середины осі flex */
+    margin-bottom: 20px; /* відступ */
+    font-family: 'Tinos', serif; /* семейство шрифтів */
+    font-size: 26px; /* розмір шрифта */
+    font-weight: 400; /*товщина букв*/
+}
+.card-title span{
+    color: #D67E35; /* колір слова одного */
+    margin-left: 6px; /* відступ  */
+}
+.card-desc{
+    text-align: center; /* текст по центру */
+    font-family: 'Tinos', serif; /* семейство шрифтів */
+    font-size: 26px; /* розмір шрифта */
+    font-weight: 400; /*товщина букв*/
+    color: #656363; /* колір тексту */
+    padding-bottom: 50px; /* відступ  */
+}
+.history{
+    margin-top: 166px; /* зовнішній верхній відступ */
+    padding-bottom: 200px;  /* внутрішній отступ */
+}
+.history-title{
+    font-family: 'Tinos', serif; /* семейство шрифтів */
+    font-size: 54px; /* розмір шрифта */
+    font-weight: 400; /*товщина букв*/
+    width: 444px; /* ширина елеменатів дівів */
+    text-align: center; /* текст по центру */
+}
+.history-title span{
+    color: #D67E35;  /* колір слова одного */
+}
+.history-desc{
+    color: #656363; /* колір текста */
+    font-size: 16px;  /* розмір шрифта */
+    width: 444px; /* ширина елеменатів дівів */
+    text-align: center; /* текст по центру */
+    margin-top: 21px; /* відступ зверху */
+}
+.history-number{
+    display: flex; /*меню  в лінію один за одним */
+    width: 444px; /* ширина елеменатів дівів */
+    justify-content: center; /* росположення контента по середины осі flex */
+    margin-top: 40px; /* відступ зверху */
+    margin-left: 30px; /* зовнішній лівий відступ */
+}
+.number-item{
+    margin-right: 60px;  /* зовнішній правий відступ */
+    text-align: center; /* текст по центру */
+    font-size: 40px; /* розмір шрифта */
+    color: #BC9060; /* колір цифр */
+}
+.number-item span{
+    display: block;  /* розположення елементів один над одним */ 
+    color: #000; /* колір текста */
+}
+.history-holder{
+    display: flex; /*меню  в лінію один за одним */
+    justify-content: space-between; /* росположення контента по середины осі flex */
+}
+.history-images{
+    position: relative; /*  розташування відносно звичайної позиції по вертикалі  */
+}
+
+.images-1{
+    position: absolute; /* независиме розташування */
+    z-index: 0; /* cамий нижній слой на якому знаходиться 1 фото */
+    top: 44px; /* відступ фото від верхньої границі */
+    left: -536px; /* відступ фото від лівої границі */
+}
+.images-2{
+    position: absolute; /* независиме розташування */
+    z-index: 999; /* накладання 2 фото на 1 */
+    top: -75px; /* відступ фото від верхньої границі */
+    left: -360px; /* відступ фото від лівої границі */
+}
+.images-3{
+    position: absolute; /* независиме розташування */
+    z-index: 999; /* накладання 3 фото на 2 */
+    top: 132px; /* відступ фото від верхньої границі */
+    left: -249px; /* відступ фото від лівої границі */
+}
+.black-block{
+    background-image: url(black-block.jpg); /* фон  */
+    padding: 80px 0px; /* внутрішні відступи */
+}
+.left-title{
+    color: #D67E34;  /* цвет кнопки */
+    font-family: 'Tinos', serif; /* семейство шрифтів */
+    font-size: 52px; /* розмір шрифта */
+    font-weight: 400; /*товщина букв*/
+    margin-bottom: 20px;  /* зовнішній нижній */
+}
+
+.left-text{
+    color: #fff; /* цвет текста */
+    font-size: 24px; /* розмір шрифта */
+    font-weight: 700; /*товщина букв*/
+}
+.right-btn{
+    background-color: #FF7400; /* цвет кнопки */
+    color: #fff; /* білий колір текст */
+    text-decoration: none; /* прибрали підчеркування */
+    padding: 14px 18px; /* відступи текста внутрішні */
+    font-weight: 700; /*товщина букв*/
+}
+.block-holder{
+    display: flex; /*меню  в лінію один за одним */
+    justify-content: space-between; /* росположення контента по середины осі flex */
+    align-items: center; /* вирівнюванняя по лінії головного елементу */
+}
+.dishes-title{
+    font-family: 'Tinos', serif; /* семейство шрифтів */
+    font-size: 54px; /* розмір шрифта */
+    font-weight: 400; /*товщина букв*/
+    text-align: center; /* текст по середині */
+    padding-top: 132px; /* верхній внутрішній відступ */
+    margin-bottom: 139px; /* відступ нижній */
+}
+.dishes-title span{
+    color: #D67E34;  /* цвет кнопки */
+    margin-left: 6px;  /* відступ зліва від слова */
+}
+.burgers{
+    display: flex; /*меню  в лінію один за одним */
+    justify-content: center; /* росположення контента по середины осі flex */
+    padding-bottom: 100px; /* внутрішній нижній відступ */
+}
+.burgers-item{
+    display: flex;  /*меню  в лінію один за одним */
+    align-items: center; /* вирівнюванняя по лінії головного елементу */
+    margin-bottom: 27px; /* відступ нижній */
+} 
+.burgers-image{
+    margin-right: 20px;   /* відступ справа */
+}
+
+.burger-text{
+    font-family: 'Tinos', serif; /* семейство шрифтів */
+    font-size: 26px; /* розмір шрифта */
+    font-weight: 400; /*товщина букв*/ 
+    margin-left: 20px;   /* відступ зліва */
+}
+.menu{
+    background-image: url(menu-bg.jpg);  /* фон  */
+    background-repeat: no-repeat; /*не повторять фотку */
+    background-size: cover; /* фотка розтягується рівномірно по екрану */
+    padding-bottom: 100px; /* внутрішні нижній відступи */
+}
+.menu-title{
+    font-family: 'Tinos', serif; /* семейство шрифтів */
+    font-size: 54px; /* розмір шрифта */
+    font-weight: 400; /*товщина букв*/ 
+    padding-top: 98px;  /* верхній внутрішній відступ */
+    color: #fff; /* колір */
+    text-align: center;   /* текст по середині */
+    padding-bottom: 138px; /* внутрішні нижній відступи */
+}
+.menu-item{
+    background-color: #fff; /* білий фон */
+    text-align: center; /* вирівнювання по центру */
+    width: 33%; /* ширина для карт меню */
+    padding-top: 80px; /* верхній внутрішній відступ */
+    padding-bottom: 40px; /* внутрішні нижній відступи */
+    margin-right: 20px; /* відступ справа */
+}
+.menu-text{
+    font-family: 'Tinos', serif; /* семейство шрифтів */
+    font-size: 26px; /* розмір шрифта */
+    font-weight: 400; /*товщина букв*/
+    padding-top: 16px;  /* верхній внутрішній відступ */
+    padding-bottom: 17px; /* внутрішні нижній відступи */
+}
+.menu-subtext{
+    font-size: 16px;  /* розмір шрифта */
+}
+.menu-img{
+    border-radius: 150px; /* заокруглення для фотки */
+}
+.menu-btn{
+    background-color: #D67E34;  /* колір кнопки */ 
+    text-decoration: none; /* прибрали підчеркування */
+    padding: 14px 67px;  /* внутрішні відступи */
+    color: #fff;  /* колір карточки */
+    font-size: 16px;  /* розмір шрифта */
+    font-weight: 700; /*товщина букв*/
+    box-shadow: 5px 5px 10px 0px #00000040  /* тінь 3 карточок */
+}
+.menu-button{
+    margin-top: 40px;  /* відступ зверху */
+}
+.price-image{
+    position: absolute;  /* независиме розташування */
+    bottom: 0; /* розташування по вертикалі */
+    right: 52px; /* розташування по горизонталі */
+}
+.menu-image{ 
+    position: relative;  /*  розташування відносно звичайної позиції по вертикалі  */
+}
+.price-vartist{
+    position: absolute; /* независиме розташування */
+    bottom: 30px; /* розташування по вертикалі */
+    right: 78px; /* розташування по горизонталі */
+    color: #fff; /* колір текста */
+    font-size: 30px;  /* розмір шрифта */
+}
+.menu-items{
+    display: flex; /*меню  в лінію один за одним */
+    justify-content: center;  /* вирівнювання по центру */
+}
+.coment{
+    background-color: #E5E5E5;   /* фон */
+    padding-top: 104px; /* верхній внутрішній відступ */
+    padding-bottom: 139px;  /* нижній внутрішній відступ */
+}
+.coment-text{
+    text-align: center; /* вирівнювання по центру */
+    font-style: italic; /* курсив шрифта */
+    margin-bottom: 20px;
+    font-size: 20px; /* розмір шрифта */
+}
+.coment-img{
+    border-radius: 50%; /* заокруглення для фотки */
+}
+.coment-image{
+    text-align: center  /* вирівнювання по центру */
+}
+.coment-type{
+    font-weight: 600; /* жирніше  шрифта */
+    font-size: 20px; /* розмір шрифта */
+    text-align: center; /* вирівнювання по центру */
+}
+.coment-name{
+    padding-top: 10px; /* внутрішній верхній відступ */
+    font-weight: 400;  /* жирніше  шрифта */
+    font-size: 20px; /* розмір шрифта */
+    text-align: center; /* вирівнювання по центру */
+}
+.galery-title{
+    font-family: 'Tinos', serif; /* семейство шрифтів */
+    font-size: 54px; /* розмір шрифта */
+    font-weight: 400; /*товщина букв*/
+    text-align: center; /* вирівнювання по центру */
+    padding-top: 100px; /* верхній внутрішній відступ */
+    margin-bottom: 60px; /* зовнішній внутрішній відступ */
+}
+.galery-title span{
+    color: #D67E34; /* цвет слова */
+}
+.galery-content{
+    display: flex; /* фото  в лінію один за одним */
+    justify-content: center;  /* вирівнювання по центру */
+}
+.galery-left{
+    margin-right: 20px; /* відступ справа */
+}
+.galery-down,
+.galery-up{
+    display: flex; /* фото  в лінію один за одним */
+    justify-content: space-between;  /* росположення контента по середины осі flex */
+    margin-bottom: 20px; /* зовнішній внутрішній відступ */
+}
+.cook{
+    padding-bottom: 100px; /* нижній внутрішній відступ */
+}
+.cook-title{
+    font-family: 'Tinos', serif; /* семейство шрифтів */
+    font-size: 54px; /* розмір шрифта */
+    font-weight: 400; /*товщина букв*/
+    text-align: center; /* вирівнювання по центру */
+    margin-bottom: 100px; /* відступ низу */
+    margin-top: 100px; /* відступ зверху */
+}
+.cook-title span{
+    color: #D67E34;  /* цвет слова */
+}
+.cook-content{
+    display: flex; /* фото  в лінію один за одним */
+    justify-content: space-around;  /* відступ між елементами, щоб не були приклеїні один до одного */
+}
+.footer{
+    background-color: #000; /* колір фона */
+    padding: 30px 0px; /* внутрішній відступи */
+    color: #fff; /* колір текста */
+    text-align: center; /* вирівнювання по центру */
+}
+
